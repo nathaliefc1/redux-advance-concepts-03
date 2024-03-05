@@ -13,7 +13,7 @@ const CartItem = (props) => {
   };
 
   const addItemHandler = () => {
-    dispatch(cartActions.addItemtoCart({
+    dispatch(cartActions.addItemToCart({
       id,
       title,
       price
@@ -35,7 +35,7 @@ const CartItem = (props) => {
         </div>
         <div className={classes.actions}>
           <button onClick={removeItemHandler}>-</button>
-          <button onClick={ItemHandler}>+</button>
+          <button onClick={addItemHandler}>+</button>
         </div>
       </div>
     </li>
